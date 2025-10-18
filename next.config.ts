@@ -2,7 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   // Optimize for Vercel deployment
-  output: 'standalone',
+  // output: 'standalone', // Removed - not needed for Vercel
   
   // Image optimization
   images: {
@@ -12,9 +12,9 @@ const nextConfig: NextConfig = {
   },
   
   // Performance optimizations
-  experimental: {
-    optimizeCss: true,
-  },
+  // experimental: {
+  //   optimizeCss: true, // Removed - can cause build issues
+  // },
   
   // Compression
   compress: true,
